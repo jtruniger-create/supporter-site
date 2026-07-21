@@ -306,3 +306,10 @@ footer .foot-links a:hover{color:var(--pine-deep);}
 .two-col.reverse > .ph-photo{
   order:2;
 }
+.brandmark-photo{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
