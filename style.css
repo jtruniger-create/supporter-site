@@ -272,3 +272,25 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   html{scroll-behavior:auto;}
   *{transition:none !important;}
 }
+.cten-note{
+  margin-top:40px;
+  padding-top:28px;
+  border-top:1px solid rgba(253,250,245,0.25);
+  max-width:56ch;
+}
+.cten-note .cten-logo{
+  height:36px;
+  width:auto;
+  margin-bottom:14px;
+  filter:brightness(0) invert(1); /* makes a dark logo show white on the green background — remove this line if your logo is already light-colored */
+}
+.cten-note p{
+  font-size:0.88rem;
+  color:rgba(253,250,245,0.75);
+  margin:0 0 0.8em;
+}
+.cten-note .donor-care{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.78rem;
+  color:rgba(253,250,245,0.65);
+}
