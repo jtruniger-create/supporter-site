@@ -293,3 +293,16 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   font-size:0.78rem;
   color:rgba(253,250,245,0.65);
 }
+.section-title{
+  font-size:1.5rem;
+  margin-bottom:24px;
+}
+.section-divider{
+  border-top:1px solid var(--line);
+}
+.two-col.reverse{
+  grid-template-columns:1fr 1.3fr;
+}
+.two-col.reverse > .ph-photo{
+  order:2;
+}
