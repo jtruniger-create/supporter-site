@@ -279,7 +279,7 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   max-width:56ch;
 }
 .cten-note .cten-logo{
-  height:72px;
+  height:300px;
   width:auto;
   margin-bottom:14px;
   filter:brightness(0) invert(1); /* makes a dark logo show white on the green background — remove this line if your logo is already light-colored */
