@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos &amp; Video — Joseph &amp; Elsa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brandmark">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <circle cx="13" cy="13" r="12.5" fill="#3F5D54"/>
+        <path d="M13 5.5c-3.5 3-5 6-5 9a5 5 0 0010 0c0-3-1.5-6-5-9z" fill="#E8C98A"/>
+      </svg>
+      Joseph &amp; Elsa
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="ministry.html">The Ministry</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="photos.html" aria-current="page">Photos &amp; Video</a></li>
+      <li><a href="give.html" class="nav-give">Give</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-header">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Photos &amp; Video</div>
+      <span class="stage-label">Etapa 04</span>
+      <h1>What the road actually looks like</h1>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="wrap">
+      <!-- EDIT: replace each ph-photo div with an <img> tag pointing at real photos -->
+      <div class="gallery-grid">
+        <div class="ph ph-photo span-2">Photo: wide Camino landscape</div>
+        <div class="ph ph-photo">Photo</div>
+        <div class="ph ph-photo">Photo</div>
+        <div class="ph ph-photo">Photo</div>
+        <div class="ph ph-photo">Photo</div>
+      </div>
+
+      <div class="video-feature">
+        <!-- EDIT: replace with an actual <video> tag or an embedded YouTube/Vimeo iframe -->
+        <div class="ph ph-video">Video: intro / calling video</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Joseph &amp; Elsa</div>
+      <p>hello@example.org · Minneapolis, MN → Caldas de Reis, Galicia</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="https://puntosluz.org" target="_blank" rel="noopener">Puntos de Luz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Joseph &amp; Elsa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brandmark">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <circle cx="13" cy="13" r="12.5" fill="#3F5D54"/>
+        <path d="M13 5.5c-3.5 3-5 6-5 9a5 5 0 0010 0c0-3-1.5-6-5-9z" fill="#E8C98A"/>
+      </svg>
+      Joseph &amp; Elsa
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="story.html" aria-current="page">Our Story</a></li>
+      <li><a href="ministry.html">The Ministry</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="photos.html">Photos &amp; Video</a></li>
+      <li><a href="give.html" class="nav-give">Give</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-header">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Our Story</div>
+      <span class="stage-label">Etapa 01</span>
+      <h1>From Minneapolis to the Way of St. James</h1>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="wrap">
+      <div class="two-col">
+        <div class="stage-body">
+          <!-- EDIT: replace with your actual story -->
+          <p>
+            We've lived in Minneapolis, built a life there, and never expected it to lead
+            to a stone path across northern Spain. But over the past year, the call to
+            Galicia has become impossible to ignore — and impossible to walk alone.
+          </p>
+          <p>
+            In fall 2026 we'll relocate to Caldas de Reis, one of the last towns pilgrims
+            pass through before Santiago de Compostela, to serve alongside Puntos de Luz.
+            We're sent out by Hope Community Church and partnered with CTEN for the
+            logistics of getting there and staying there well.
+          </p>
+          <p>
+            This page is where we'll keep you close to that story as it unfolds — not
+            just the ask, but the actual life of it.
+          </p>
+        </div>
+        <!-- EDIT: swap for a portrait or a Camino landscape photo -->
+        <div class="ph ph-photo" style="aspect-ratio:4/5;">Photo: the two of you<br>at home or on the road</div>
+      </div>
+      <div class="fact-row">
+        <div class="fact"><div class="num">2026</div><div class="lbl">Departure, fall</div></div>
+        <div class="fact"><div class="num">1 yr</div><div class="lbl">Initial term, through fall 2027</div></div>
+        <div class="fact"><div class="num">Galicia</div><div class="lbl">Caldas de Reis, Spain</div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Joseph &amp; Elsa</div>
+      <p>hello@example.org · Minneapolis, MN → Caldas de Reis, Galicia</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="https://puntosluz.org" target="_blank" rel="noopener">Puntos de Luz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
