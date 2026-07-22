@@ -84,6 +84,10 @@
     navToggle.setAttribute('aria-expanded', open);
   });
 </script>
-
+<script>
+  fetch('partials/newsletter-popup.html')
+    .then(res => res.text())
+    .then(html => { document.getElementById('newsletter-modal-slot').innerHTML = html; });
+</script>
 </body>
 </html>
