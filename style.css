@@ -336,3 +336,22 @@ footer .foot-links a:hover{color:var(--pine-deep);}
 .nav-subscribe:hover{
   background:var(--ivory-deep);
 }
+.newsletter-modal{
+  border:none;
+  border-radius:8px;
+  padding:36px;
+  max-width:440px;
+  width:90%;
+  background:var(--brown-deep);
+  color:var(--ivory);
+}
+.newsletter-modal::backdrop{
+  background:rgba(46,38,32,0.55);
+}
+.newsletter-modal h3{color:var(--ivory);}
+.newsletter-modal p{color:rgba(253,250,245,0.85); font-size:0.95rem;}
+.modal-close{
+  position:absolute; top:14px; right:16px;
+  background:none; border:none; color:var(--ivory);
+  font-size:1.4rem; cursor:pointer; line-height:1;
+}
