@@ -25,7 +25,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="story.html">Our Story</a></li>
       <li><a href="ministry.html">The Ministry</a></li>
-      <li><a href="camino.html" aria-current="page">Camino</a></li>
+      <li><a href="camino.html" aria-current="page">The Camino</a></li>
       <li><a href="newsletter.html">Newsletter</a></li>
       <li><a href="photos.html">Photos &amp; Video</a></li>
       <li><a href="give.html" class="nav-give">Give</a></li>
