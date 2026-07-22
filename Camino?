@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is the Camino? — Joseph &amp; Elsa Truniger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brandmark">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+  <circle cx="13" cy="13" r="12.5" fill="#3F5D54"/>
+  <path d="M13 6c-3 2-5.5 5-6.5 9.5C8 17 10.3 18 13 18s5-1 6.5-2.5C18.5 11 16 8 13 6z" fill="#E8C98A"/>
+  <path d="M13 8.5V17M10.5 9.5 11 17M15.5 9.5 15 17M8.5 11.5l1.2 5.8M17.5 11.5l-1.2 5.8" stroke="#3F5D54" stroke-width="0.6" stroke-linecap="round"/>
+</svg>
+      Joseph &amp; Elsa Truniger
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="ministry.html">The Ministry</a></li>
+      <li><a href="camino.html" aria-current="page">Camino</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="photos.html">Photos &amp; Video</a></li>
+      <li><a href="give.html" class="nav-give">Give</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="main">
+  <header class="page-header">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Camino</div>
+      <span class="stage-label"></span>
+      <h1>What is the Camino?</h1>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="wrap">
+      <div class="two-col">
+        <!-- EDIT: swap for a real Camino trail/waymarker photo -->
+        <img src="/.netlify/images?url=/images/camino-trail.jpg&w=1200" alt="A waymarker along the Camino de Santiago" class="photo-frame">
+        <div class="stage-body">
+          <!-- EDIT: adjust wording as you'd like -->
+          <p>
+            The Camino de Santiago (the "Way of St. James") is a network of ancient pilgrimage
+            routes across Europe that all lead to one place: the cathedral in Santiago de
+            Compostela, Spain, where tradition holds that the remains of the apostle James are buried.
+          </p>
+          <p>
+            People have walked these paths for over a thousand years — originally as an act of
+            religious pilgrimage, and today for reasons that range from deep faith to grief,
+            searching, a personal challenge, or simple curiosity. Tens of thousands of people
+            still walk it every year, some for a few days and others for over a month.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-divider">
+    <div class="wrap">
+      <h2 class="section-title">The Camino Francés</h2>
+      <div class="two-col reverse">
+        <div class="stage-body">
+          <!-- EDIT: adjust as needed -->
+          <p>
+            The most walked of all the routes is the Camino Francés, stretching roughly 500 miles
+            from St. Jean Pied de Port in France, across northern Spain, to Santiago de Compostela.
+            It typically takes 30–35 days to walk in full.
+          </p>
+          <p>
+            Caldas de Reis, where we'll be living, sits along the final stretch of this route —
+            one of the last towns pilgrims pass through, just a couple of days' walk from the
+            cathedral itself.
+          </p>
+        </div>
+        <!-- EDIT: swap for a map or landscape photo of the route -->
+        <img src="/.netlify/images?url=/images/camino-route.jpg&w=1200" alt="The Camino Francés route through northern Spain" class="photo-frame">
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-divider">
+    <div class="wrap">
+      <h2 class="section-title">Why it matters for this ministry</h2>
+      <div class="two-col">
+        <!-- EDIT: swap for a photo of pilgrims resting/gathering -->
+        <img src="/.netlify/images?url=/images/camino-pilgrims.jpg&w=1200" alt="Pilgrims resting along the Camino" class="photo-frame">
+        <div class="stage-body">
+          <!-- EDIT: adjust as needed -->
+          <p>
+            Walking that many miles, day after day, tends to strip away distraction. Pilgrims
+            often arrive at conversations — with themselves, with each other, with God — that
+            wouldn't happen in ordinary life. Many are walking through grief, a major life
+            transition, or a genuine search for meaning.
+          </p>
+          <p>
+            That's exactly why a rest stop along the way, run by people who genuinely want to
+            listen and offer hospitality, can mean so much. It's not a sales pitch — it's a bench,
+            a cup of coffee, and a willingness to sit with someone in whatever they're carrying.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Joseph &amp; Elsa</div>
+      <p>hello@example.org · Minneapolis, MN → Caldas de Reis, Galicia</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="https://puntosluz.org" target="_blank" rel="noopener">Puntos de Luz</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
