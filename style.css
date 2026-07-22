@@ -313,3 +313,12 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   object-fit:cover;
   flex-shrink:0;
 }
+.photo-frame{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:var(--radius);
+  border:none;
+  background:none;
+  padding:0;
+}
