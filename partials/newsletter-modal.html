@@ -21,7 +21,7 @@
     <button type="submit" class="btn btn-primary">Subscribe</button>
   </form>
 
-  <p id="newsletter-success" class="newsletter-success" hidden>Thanks — you're on the list!</p>
+  <p id="newsletter-success" class="newsletter-success" hidden>You have been added to our list!</p>
 </dialog>
 
 <script>
@@ -37,7 +37,17 @@
     })
     .then(() => {
       form.hidden = true;
-      document.getElementById('newsletter-success').hidden = false;
+      const successMsg = document.getElementById('newsletter-success');
+      successMsg.hidden = false;
+
+      // Give them a moment to read the message, then close the popup
+      setTimeout(() => {
+        document.getElementById('newsletterModal').close();
+        // Reset for next time it's opened
+        form.hidden = false;
+        form.reset();
+        successMsg.hidden = true;
+      }, 1800);
     })
     .catch((error) => {
       alert('Something went wrong submitting the form. Please try again.');
