@@ -89,9 +89,18 @@
 </script>
 <div id="newsletter-modal-slot"></div>
 <script>
-  fetch('partials/newsletter-popup.html')
+  fetch('partials/newsletter-modal.html')
     .then(res => res.text())
-    .then(html => { document.getElementById('newsletter-modal-slot').innerHTML = html; });
+    .then(html => {
+      const slot = document.getElementById('newsletter-modal-slot');
+      slot.innerHTML = html;
+      // Re-run any <script> tags from the injected partial, since innerHTML doesn't execute them
+      slot.querySelectorAll('script').forEach(oldScript => {
+        const newScript = document.createElement('script');
+        newScript.textContent = oldScript.textContent;
+        document.body.appendChild(newScript);
+      });
+    });
 </script>
 </body>
 </html>
