@@ -409,3 +409,8 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   color:var(--gold);
   font-weight:600;
 }
+.social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
