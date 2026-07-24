@@ -28,7 +28,7 @@
   <li><a href="story.html">Our Story</a></li>
   <li><a href="ministry.html">The Ministry</a></li>
   <li><button type="button" class="nav-subscribe" onclick="document.getElementById('newsletterModal').showModal()">Newsletter</button></li>
-  <li><a href="give.html" class="nav-give">Give</a></li>
+  <li><a href="give.html" class="nav-give" aria-current="page">Give</a></li>
 </ul>
   </div>
 </nav>
@@ -36,44 +36,34 @@
 <main id="main">
   <header class="page-header">
     <div class="wrap">
-      <div class="breadcrumb" style="color:rgba(253,250,245,0.7);"><a href="index.html" style="color:rgba(253,250,245,0.85);">Home</a> / Give</div>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Give</div>
       <span class="stage-label"></span>
       <h1>Partner with us</h1>
     </div>
   </header>
 
   <section class="content-section">
-    <div class="two-col">
-      <div>
-        <p>
-          Thank you for considering partnering with us financially.
-          Financial partners allow us to stay present in ministry but
-          they also get to join in what God is doing in Spain.
-        </p>
-        
-        <a href="https://www.cten.org/europe-missionaries/joseph-and-elsa-truniger?rq=truniger" class="btn btn-primary" style="background:var(--gold); color:var(--pine-deep); margin-top:20px;">Give</a>
-        <div><img src="/.netlify/images?url=/images/CTEN Logo.png&w=1200&h=1500&fit=cover" alt="CTEN Logo" class="cten-logo">
-      </div>
+    <div class="wrap">
+      <div class="two-col">
+        <div class="stage-body">
           <p>
-      We are excited to partner with CTEN (Commission to Every Nation). CTEN is a recognized 501(c)(3) —
-      gifts are tax-deductible. Donations are solicited with the understanding that CTEN maintains complete
-      discretion and control over the use of all donated funds. CTEN honors donor preferences as long as it
-      is within its stated tax exempt purposes. Please contact the donor care team with any questions.
-    </p>
-    <p class="donor-care">Donor care: trinettezirkel@cten.org, lindaperkins@cten.org, robinhill@cten.org</p>
-<div class="cten-note">
-  <div class="cten-text">
-    <p>
-      We are excited to partner with CTEN (Commission to Every Nation). CTEN is a recognized 501(c)(3) —
-      gifts are tax-deductible. Donations are solicited with the understanding that CTEN maintains complete
-      discretion and control over the use of all donated funds. CTEN honors donor preferences as long as it
-      is within its stated tax exempt purposes. Please contact the donor care team with any questions.
-    </p>
-    <p class="donor-care">Donor care: trinettezirkel@cten.org, lindaperkins@cten.org, robinhill@cten.org</p>
-  </div>
+            Thank you for considering partnering with us financially.
+            Financial partners allow us to stay present in ministry but
+            they also get to join in what God is doing in Spain.
+          </p>
 
- <img src="/.netlify/images?url=/images/CTEN Logo.png&w=1200&h=1500&fit=cover" alt="CTEN Logo" class="cten-logo">
-</div>
+          <a href="https://www.cten.org/europe-missionaries/joseph-and-elsa-truniger?rq=truniger" class="btn btn-primary give-btn-wide">Give</a>
+
+          <p style="margin-top:28px;">
+            We are excited to partner with CTEN (Commission to Every Nation). CTEN is a recognized 501(c)(3) —
+            gifts are tax-deductible. Donations are solicited with the understanding that CTEN maintains complete
+            discretion and control over the use of all donated funds. CTEN honors donor preferences as long as it
+            is within its stated tax exempt purposes. Please contact the donor care team with any questions.
+          </p>
+          <p class="donor-care">Donor care: trinettezirkel@cten.org, lindaperkins@cten.org, robinhill@cten.org</p>
+        </div>
+
+        <img src="/.netlify/images?url=/images/CTEN Logo.png&w=800" alt="CTEN — Commission to Every Nation logo" class="photo-frame-contain">
       </div>
     </div>
   </section>
@@ -83,33 +73,21 @@
   <div class="wrap">
     <div>
       <div class="foot-brand">Joseph &amp; Elsa</div>
-      <!-- EDIT: contact email -->
       <p>jetruniger@gmail.com · Caldas de Reis, Spain</p>
     </div>
 
-<ul class="foot-links">
-  <!-- EDIT: replace # with your actual Facebook Page URL. Currently adding as a comment so that we can add this back later 
-  <li>
-    <a href="#" target="_blank" rel="noopener" class="social-link">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/>
-      </svg>
-      Follow us on Facebook
-    </a>
-  </li>-->
-  <!-- EDIT: replace # with Puntos de Luz's actual Instagram URL -->
-  <li>
-    <a href="https://www.instagram.com/puntosluz/" target="_blank" rel="noopener" class="social-link">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="2" y="2" width="20" height="20" rx="5"/>
-        <circle cx="12" cy="12" r="4.5"/>
-        <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
-      </svg>
-      Follow Puntos de Luz on Instagram
-    </a>
-  </li>
-</ul>
-
+    <ul class="foot-links">
+      <li>
+        <a href="https://www.instagram.com/puntosluz/" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+          Follow Puntos de Luz on Instagram
+        </a>
+      </li>
+    </ul>
   </div>
 </footer>
 
@@ -128,7 +106,6 @@
     .then(html => {
       const slot = document.getElementById('newsletter-modal-slot');
       slot.innerHTML = html;
-      // Re-run any <script> tags from the injected partial, since innerHTML doesn't execute them
       slot.querySelectorAll('script').forEach(oldScript => {
         const newScript = document.createElement('script');
         newScript.textContent = oldScript.textContent;
