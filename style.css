@@ -329,6 +329,15 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   background:none;
   padding:0;
 }
+.photo-frame-contain{
+  width:100%;
+  max-height:600px;
+  object-fit:contain;
+  border-radius:var(--radius);
+  border:none;
+  background:var(--ivory-deep);
+  padding:12px;
+}
 .nav-subscribe{
   background:var(--pine);
   color:var(--ivory);
