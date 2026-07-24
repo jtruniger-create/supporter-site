@@ -281,8 +281,9 @@ footer .foot-links a:hover{color:var(--pine-deep);}
 .cten-note .cten-logo{
   height:250px;
   width:auto;
-  margin-bottom:14px;
-  /* remove the invert filter — logo shows in its natural colors on the light background now */
+  margin:20px auto 0;
+  display:block;
+}
 }
 .cten-note p{
   font-size:0.88rem;
