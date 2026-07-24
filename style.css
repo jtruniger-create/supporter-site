@@ -439,3 +439,66 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   padding-right:48px;
   display:inline-flex;
 }
+/* Give page specific tweaks */
+.give-page-header{
+  padding-bottom:32px;
+}
+.content-section.give-page-header{
+  padding-top:32px;
+}
+
+.give-stat{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.85rem;
+  color:var(--pine-deep);
+  background:var(--ivory-deep);
+  border-left:3px solid var(--gold);
+  padding:12px 16px;
+  margin:20px 0;
+}
+
+.give-btn-wide{
+  margin-top:4px;
+  padding-left:40px;
+  padding-right:40px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+
+.donor-care-box{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-top:20px;
+  padding:14px 16px;
+  background:var(--ivory-deep);
+  border-radius:var(--radius);
+  font-size:0.85rem;
+  color:var(--brown-deep);
+}
+.donor-care-box svg{
+  flex-shrink:0;
+  margin-top:2px;
+  color:var(--pine);
+}
+
+.cten-card{
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:12px;
+  background:var(--ivory-deep);
+}
+.cten-card .photo-frame-contain{
+  max-height:340px;
+  background:transparent;
+  padding:0;
+  margin-bottom:12px;
+}
+.cten-caption{
+  text-align:center;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.78rem;
+  color:var(--brown);
+  margin:0;
+}
