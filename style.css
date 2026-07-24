@@ -285,8 +285,9 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   max-width:56ch;
 }
 .cten-note .cten-logo{
-  height:120px;
+  height:200px;
   width:auto;
+  max-width:100%;
   object-fit:contain;
   flex-shrink:0;
   margin:0;
