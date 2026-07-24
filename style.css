@@ -430,5 +430,12 @@ footer .foot-links a:hover{color:var(--pine-deep);}
 .social-link{
   display:inline-flex;
   align-items:center;
-  gap:6px;
+  gap:6p
+    x;
+}
+.give-btn-wide{
+  margin-top:20px;
+  padding-left:48px;
+  padding-right:48px;
+  display:inline-flex;
 }
