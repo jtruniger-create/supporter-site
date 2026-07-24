@@ -324,18 +324,18 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   padding:0;
 }
 .nav-subscribe{
-  background:transparent;
-  color:var(--brown-deep);
-  border:1px solid var(--brown);
-  padding:9px 18px;
+  background:var(--pine);
+  color:var(--ivory);
+  border:none;
+  padding:9px 20px;
   border-radius:var(--radius);
   font-family:'Work Sans', sans-serif;
   font-size:0.92rem;
-  font-weight:500;
+  font-weight:600;
   cursor:pointer;
 }
 .nav-subscribe:hover{
-  background:var(--ivory-deep);
+  background:var(--pine-deep);
 }
 .newsletter-modal{
   border:none;
