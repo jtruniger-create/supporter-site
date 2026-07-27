@@ -502,3 +502,11 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   color:var(--brown);
   margin:0;
 }
+@media (max-width:900px){
+  .camino-video-row{
+    grid-template-columns:1fr !important;
+  }
+  .camino-video{
+    order:-1;
+  }
+}
