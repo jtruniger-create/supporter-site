@@ -254,10 +254,10 @@ a:focus-visible, button:focus-visible{
 
 /* -------- footer -------- */
 footer{padding:56px 0 40px; border-top:1px solid var(--line);}
-footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px;}
+footer .wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;}
 footer .foot-brand{font-family:'Fraunces', serif; color:var(--brown-deep); font-weight:600;}
 footer p{font-size:0.85rem; color:var(--brown); margin:6px 0 0;}
-footer .foot-links{display:flex; gap:20px; list-style:none; margin:0; padding:0;}
+footer .foot-links{display:flex; align-items:center; gap:20px; list-style:none; margin:0; padding:0;}
 footer .foot-links a{color:var(--brown); text-decoration:none; font-size:0.85rem;}
 footer .foot-links a:hover{color:var(--pine-deep);}
 
