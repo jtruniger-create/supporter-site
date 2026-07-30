@@ -1,0 +1,57 @@
+<dialog id="contactModal" class="newsletter-modal">
+  <button type="button" class="modal-close" onclick="document.getElementById('contactModal').close()" aria-label="Close">&times;</button>
+  <h3>Connect with us</h3>
+  <p>Send us a message and we'll get back to you personally.</p>
+
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="signup-form" onsubmit="return handleContactSubmit(event)">
+    <input type="hidden" name="form-name" value="contact">
+    <p class="bot-field-wrap" hidden>
+      <label>Don't fill this out if you're human: <input name="bot-field"></label>
+    </p>
+
+    <label for="contact-name">Name</label>
+    <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+
+    <label for="contact-email">Your email</label>
+    <input type="email" id="contact-email" name="email" placeholder="you@email.com" required>
+
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="4" placeholder="What's on your mind?" required style="padding:12px 14px; border-radius:var(--radius); border:1px solid rgba(253,250,245,0.3); background:rgba(253,250,245,0.06); color:var(--ivory); font-family:'Work Sans', sans-serif; font-size:0.95rem; resize:vertical;"></textarea>
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+
+  <p id="contact-success" class="newsletter-success" hidden>Thanks — we'll be in touch soon!</p>
+</dialog>
+
+<script>
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    })
+    .then(() => {
+      form.hidden = true;
+      const successMsg = document.getElementById('contact-success');
+      successMsg.hidden = false;
+
+      setTimeout(() => {
+        document.getElementById('contactModal').close();
+        form.hidden = false;
+        form.reset();
+        successMsg.hidden = true;
+      }, 1800);
+    })
+    .catch((error) => {
+      alert('Something went wrong sending your message. Please try again.');
+      console.error(error);
+    });
+
+    return false;
+  }
+</script>
