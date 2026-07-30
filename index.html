@@ -46,8 +46,6 @@
           We are sent by Hope Community Church and going with CTEN (Commission to Every Nation).
         </p>
         <div class="hero-ctas">
-          <!-- EDIT: replace # with your CTEN/Puntos de Luz donate link -->
-         
           <a href="give.html" class="btn btn-primary">Partner with us</a>
           <a href="story.html" class="btn btn-ghost">Read Our Story</a>
         </div>
@@ -63,8 +61,8 @@
   <div class="wrap">
     <div>
       <div class="foot-brand">Joseph &amp; Elsa</div>
-      <!-- EDIT: contact email -->
-      <p>jetruniger@gmail.com · Caldas de Reis, Spain</p>
+      <p>Caldas de Reis, Spain</p>
+      <button type="button" class="connect-link" onclick="document.getElementById('contactModal').showModal()">Connect with us</button>
     </div>
 
 <ul class="foot-links">
@@ -101,6 +99,7 @@
     navToggle.setAttribute('aria-expanded', open);
   });
 </script>
+
 <div id="newsletter-modal-slot"></div>
 <script>
   fetch('partials/newsletter-modal.html')
@@ -108,7 +107,6 @@
     .then(html => {
       const slot = document.getElementById('newsletter-modal-slot');
       slot.innerHTML = html;
-      // Re-run any <script> tags from the injected partial, since innerHTML doesn't execute them
       slot.querySelectorAll('script').forEach(oldScript => {
         const newScript = document.createElement('script');
         newScript.textContent = oldScript.textContent;
@@ -116,10 +114,33 @@
       });
     });
 </script>
-  <form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" hidden>
+
+<div id="contact-modal-slot"></div>
+<script>
+  fetch('partials/contact-modal.html')
+    .then(res => res.text())
+    .then(html => {
+      const slot = document.getElementById('contact-modal-slot');
+      slot.innerHTML = html;
+      slot.querySelectorAll('script').forEach(oldScript => {
+        const newScript = document.createElement('script');
+        newScript.textContent = oldScript.textContent;
+        document.body.appendChild(newScript);
+      });
+    });
+</script>
+
+<!-- Hidden forms so Netlify detects these forms at build time — never removed, never shown -->
+<form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" hidden>
   <input type="text" name="name">
   <input type="email" name="email">
   <input type="tel" name="phone">
 </form>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <textarea name="message"></textarea>
+</form>
+
 </body>
 </html>
