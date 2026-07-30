@@ -511,6 +511,8 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   }
 }
 .connect-link{
+  -webkit-appearance:none;
+  appearance:none;
   display:inline-flex;
   align-items:center;
   gap:6px;
@@ -525,10 +527,12 @@ footer .foot-links a:hover{color:var(--pine-deep);}
   cursor:pointer;
   margin-top:8px;
   text-decoration:none;
+  outline:none;
 }
 .connect-link:hover{
   background:var(--ivory-deep);
 }
-.connect-link:hover{
-  color:var(--pine-deep);
+.connect-link:focus-visible{
+  outline:3px solid var(--pine);
+  outline-offset:2px;
 }
