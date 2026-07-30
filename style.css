@@ -510,3 +510,15 @@ footer .foot-links a:hover{color:var(--pine-deep);}
     order:-1;
   }
 }
+.connect-link{
+  background:none;
+  border:none;
+  color:var(--brown);
+  font-size:0.85rem;
+  cursor:pointer;
+  padding:0;
+  text-decoration:underline;
+}
+.connect-link:hover{
+  color:var(--pine-deep);
+}
